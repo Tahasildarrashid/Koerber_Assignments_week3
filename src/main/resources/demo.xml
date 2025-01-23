@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Define the br bean -->
+    <bean id="br" class="assignment1.repository.Bookdaoimpl"/>
+
+    <!-- Define the bookService bean and inject br -->
+    <bean id="bs" class="assignment1.service.Bookserviceimplementation">
+        <property name="dao" ref="br"/> <!-- Inject the br bean -->
+    </bean>
+
+</beans>

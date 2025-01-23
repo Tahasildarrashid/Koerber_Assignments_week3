@@ -4,12 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- Define the br bean -->
     <bean id="br" class="assignment1.repository.Bookdaoimpl"/>
-
-    <!-- Define the bookService bean and inject br -->
+       
     <bean id="bs" class="assignment1.service.Bookserviceimplementation">
-        <property name="dao" ref="br"/> <!-- Inject the br bean -->
+        <property name="dao" ref="br"/> 
     </bean>
 
 </beans>

@@ -1,4 +1,0 @@
-package com.bookapp.loggable;
-
-public @interface Logger {
-}

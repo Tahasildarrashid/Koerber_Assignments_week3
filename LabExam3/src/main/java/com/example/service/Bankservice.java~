@@ -1,0 +1,7 @@
+package com.example.service;
+
+public class Bankservice {
+    public void transfer(int from, int to, int amout);
+    public void deposit(int id, double amount);
+    public Account getAccount(int id);
+}
